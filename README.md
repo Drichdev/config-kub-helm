@@ -8,6 +8,8 @@ This documentation explains how to deploy a Helm chart on your Kubernetes cluste
 - Download your `KUBECONFIG` file.
 - This file contains the necessary credentials and configuration to connect to your Kubernetes cluster.
 
+![ovhcloud kubeconfig](asset/ref.png)
+
 ## 2. Install kubectl
 
 You can install `kubectl` using one of the following methods depending on your operating system.
