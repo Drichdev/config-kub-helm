@@ -96,7 +96,33 @@ kubectl config get-contexts
 ```bash
 kubectl config set-context <current-context> --cluster=<cluster-name> --user=<user-name>
 ```
+#### add url credential
 
+```bash
+kubectl config set-cluster lago --server=<https://...> --certificate-authority=</path/to/ca.crt>
+```
+
+#### add client certificat
+
+Embed client certificate data in the "cluster-admin" entry kubectl config set-credentials cluster-admin
+
+--client-key='': Path to client-key file for the user entry in kubeconfig
+
+```bash
+kubectl config set-credentials kubernetes-admin-lago --client-certificate=<~/.kube/admin.crt> --client-key=''
+```
+
+#### update context
+
+```bash
+kubectl config set-context kubernetes-admin@lago --cluster=<cluster-name> --user=<user-name>
+```
+
+#### verify 
+
+```bash
+kubectl config view --minify
+```
 #### swith context
 
 ```bash
