@@ -82,6 +82,33 @@ kubectl config view
 ```bash
 kubectl get nodes
 ```
+{
+⚠️⚠️⚠️
+### Si vous avez des erreurs il peut s'agir que vous etes deja connecter a un cluster 
+
+#### view all context created
+
+```bash
+kubectl config get-contexts
+```
+#### add your context
+
+```bash
+kubectl config set-context <current-context> --cluster=<cluster-name> --user=<user-name>
+```
+
+#### swith context
+
+```bash
+kubectl config use-context <current-context> 
+```
+#### Now get your nodes
+
+```bash
+kubectl get nodes
+```
+⚠️⚠️⚠️
+}
 
 ### 9. Deploy Your Helm Chart
 
