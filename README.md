@@ -128,6 +128,12 @@ kubectl config view --minify
 ```bash
 kubectl config use-context <current-context> 
 ```
+
+#### delete context
+
+```bash
+kubectl config delete-context <nom_du_context>
+```
 #### Now get your nodes
 
 ```bash
@@ -135,6 +141,12 @@ kubectl get nodes
 ```
 ⚠️⚠️⚠️
 }
+
+### Merge kubeconfig 
+
+```bash
+KUBECONFIG=~/.kube/config:kubeconfig.yml kubectl config view --merge --flatten > ~/.kube/config
+```
 
 ### 9. Deploy Your Helm Chart
 
