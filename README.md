@@ -84,7 +84,7 @@ kubectl get nodes
 ```
 
 > ⚠️⚠️⚠️
-> ### Si vous avez des erreurs il peut s'agir que vous etes deja connecter a un cluster 
+> ### If you get errors, it may be because you are already connected to a cluster.
 > 
 > #### view all context created
 > 
