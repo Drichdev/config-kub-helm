@@ -8,7 +8,7 @@
 		<td>Liste tous les pods dans le namespace actuel.</td>	
 	</tr>
 	<tr>
-		<td>kubectl get pods -n <namespace> </td>
+		<td>kubectl get pods -n `namespace` </td>
 		<td>Liste les pods dans un namespace spécifique.</td>
 	</tr>
 	<tr>
@@ -38,19 +38,19 @@
 
 <table>
 	<tr> 
-		<td>kubectl describe pod <pod-name> </td>
+		<td>kubectl describe pod `pod-name` </td>
 		<td>Affiche tous les détails sur un pod, y compris les événements à la fin.</td>	
 	</tr>
 	<tr>
-		<td>kubectl describe deployment <deployment-name> </td>
+		<td>kubectl describe deployment `deployment-name` </td>
 		<td>Affiche les détails du déploiement (stratégies, pods liés, erreurs).</td>
 	</tr>
 	<tr>
-		<td>kubectl logs <pod-name> </td>
+		<td>kubectl logs `pod-name` </td>
 		<td>Affiche les logs d’un pod (stdout/stderr).</td>
 	</tr>
 	<tr>
-		<td>kubectl logs <pod-name> -c <container-name> </td>
+		<td>kubectl logs `pod-name` -c `container-name` </td>
 		<td>Si ton pod a plusieurs conteneurs, tu peux cibler un conteneur.</td>
 	</tr>
 	<tr>
@@ -71,19 +71,19 @@
 		<td>Supprime un objet à partir d’un fichier de config.</td>
 	</tr>
 	<tr>
-		<td>kubectl delete pod <pod-name> </td>
+		<td>kubectl delete pod `pod-name` </td>
 		<td>Supprime un pod. Kubernetes le recrée automatiquement si c’est un déploiement.</td>
 	</tr>
 	<tr>
-		<td>kubectl rollout restart deployment <deployment-name></td>
+		<td>kubectl rollout restart deployment `deployment-name` </td>
 		<td>Redémarre proprement un déploiement (utile après modif de config ou de volume).</td>
 	</tr>
 	<tr>
-		<td>kubectl exec -it <pod-name> -- /bin/bash</td>
+		<td>kubectl exec -it `pod-name` -- /bin/bash</td>
 		<td>Ouvre un terminal dans le pod (si bash est installé).</td>
 	</tr>
     <tr>
-		<td>kubectl port-forward pod/<pod-name> 8080:80</td>
+		<td>kubectl port-forward pod/`pod-name` 8080:80</td>
 		<td>Redirige un port local vers un port du pod (utile pour tester en local).</td>
 	</tr>
 </table>
