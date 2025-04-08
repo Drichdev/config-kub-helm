@@ -175,3 +175,9 @@ helm upgrade mon-release ./path/to/my-chart
 ```bash
 kubectl get all
 ```
+
+#### 12. Create namespace
+
+```bash
+kubectl config set-context $(kubectl config current-context) --namespace=name
+```
