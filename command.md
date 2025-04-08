@@ -3,31 +3,31 @@
 1. **Commandes générales**
 
 <table>
-	<tr align="center"> 
+	<tr> 
 		<td>kubectl get pods</td>
 		<td>Liste tous les pods dans le namespace actuel.</td>	
 	</tr>
-	<tr align="center">
+	<tr>
 		<td>kubectl get pods -n <namespace> </td>
 		<td>Liste les pods dans un namespace spécifique.</td>
 	</tr>
-	<tr align="center">
+	<tr>
 		<td>kubectl get deployments</td>
 		<td>Liste tous les déploiements (apps) dans le namespace actuel.</td>
 	</tr>
-	<tr align="center">
+	<tr>
 		<td>kubectl get svc</td>
 		<td>Liste tous les services (expositions réseau) dans le namespace actuel.</td>
 	</tr>
-	<tr align="center">
+	<tr>
 		<td>kubectl get pvc</td>
 		<td >Liste les PersistentVolumeClaims dans le namespace actuel.</td>
 	</tr>
-	<tr align="center">
+	<tr>
 		<td>kubectl get pv</td>
 		<td>Liste tous les PersistentVolumes (niveau cluster).</td>
 	</tr>
-    <tr align="center">
+    <tr>
         <td>kubectl get events</td>
         <td>Affiche les événements récents (triés par défaut par date).</td>
     </tr>
