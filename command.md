@@ -119,3 +119,13 @@ kubectl logs <nom-du-pod> -n <namespace>
 kubectl get pvc -n <namespace> 
 kubectl describe pvc rasa-pvc -n <namespace>
 ```
+
+6. **Créer un secret**
+
+```bash
+kubectl create secret docker-registry `name` \ 
+  --docker-server=`your-registry-server` \
+  --docker-username=`your-name` \
+  --docker-password=`your-pword` \
+  --docker-email=`your-email` -n `namespace`
+```
